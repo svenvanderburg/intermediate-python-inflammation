@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "intermediate-python-inflammation"
+version = "0.1.0"
+description = "Analyse patient inflammation data"
+authors = ["Sven van der Burg <s.vanderburg@esciencecenter.nl>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "intermediate_python_inflammation"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+matplotlib = "^3.7.1"
+numpy = "^1.24.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.17.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
